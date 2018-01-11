@@ -14,7 +14,6 @@ object Day02 {
         var checkSum = 0
         val lines = input.split("\n")
         lines.forEach {
-            println("numbers:$it")
             val (x, y) = findDivisors(it.split("\t").map { Integer.parseInt(it) })
             checkSum += (x / y)
         }
