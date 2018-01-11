@@ -13,7 +13,9 @@ class Day02Test {
 
   @Test
   fun part1() {
-    answerEquals(Answer.DAY02_PART1, Day02.part1(getResourceAsString("day02.txt")))
+    val actual = Day02.part1(getResourceAsString("day02.txt"))
+    answerEquals(Answer.DAY02_PART1, actual)
+    println("actual:$actual")
   }
 
   @Test
